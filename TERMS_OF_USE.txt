@@ -5,8 +5,9 @@ This document governs use of the BirdNET+ V3.0 developer preview models (the “
 1. Description
 BirdNET+ V3.0-preview is an experimental developer preview deep learning model family for detecting animal vocalizations in audio. It builds on:
 - Kahl et al. (2021): BirdNET: A deep learning solution for avian diversity monitoring.
+- Lasseck (2018): Audio-based Bird Species Identification with Deep Convolutional Neural Networks.
 
-Development and support involve the K. Lisa Yang Center for Conservation Bioacoustics (Cornell University) and Chemnitz University of Technology. Provided solely for research and evaluation.
+Development and support involve the K. Lisa Yang Center for Conservation Bioacoustics (Cornell University), Chemnitz University of Technology and Museum für Naturkunde Berlin. Provided solely for research and evaluation.
 
 2. License
 Models are licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0):
