@@ -118,16 +118,16 @@ Please refer to the [TERMS OF USE](TERMS_OF_USE.md) file for detailed terms and 
 
 ## Citation
 
-Lasseck, M., Eibl, M., Klinck, H., & Kahl, S. (2025). BirdNET+ V3.0 model developer preview (Preview 1). Zenodo. https://doi.org/10.5281/zenodo.17571190
+Lasseck, M., Eibl, M., Klinck, H., & Kahl, S. (2025). BirdNET+ V3.0 model developer preview (Preview 2). Zenodo. https://doi.org/10.5281/zenodo.17631020
 
 ```bibtex
 @dataset{lasseck2025birdnet,
-  title     = {BirdNET+ V3.0 model developer preview (Preview 1)},
+  title     = {BirdNET+ V3.0 model developer preview (Preview 2)},
   author    = {Lasseck, M. and Eibl, M. and Klinck, H. and Kahl, S.},
   year      = {2025},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.17571190},
-  url       = {https://doi.org/10.5281/zenodo.17571190}
+  doi       = {10.5281/zenodo.17631020},
+  url       = {https://doi.org/10.5281/zenodo.17631020}
 }
 ```
 

@@ -1,6 +1,7 @@
 # Ignore downloaded model files
 models/*.pt
 models/*.csv
+models/*.onnx
 
 # Ignore result files
 *.results.csv

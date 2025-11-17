@@ -18,8 +18,8 @@ SR = 32000  # model expects 32 kHz
 # Defaults and hardcoded URLs (replace with actual links)
 DEFAULT_MODEL_PATH = "models/BirdNET+_V3.0-preview2_EUNA_1K_FP32.pt"
 DEFAULT_LABELS_PATH = "models/BirdNET+_V3.0-preview2_EUNA_1K_Labels.csv"
-DEFAULT_MODEL_URL = "https://zenodo.org/records/17571190/files/BirdNET+_V3.0-preview1_EUNA_1K_FP32.pt?download=1"
-DEFAULT_LABELS_URL = "https://zenodo.org/records/17571190/files/BirdNET+_V3.0-preview1_EUNA_1K_Labels.csv?download=1"
+DEFAULT_MODEL_URL = "https://zenodo.org/records/17631020/files/BirdNET+_V3.0-preview2_EUNA_1K_FP32.pt?download=1"
+DEFAULT_LABELS_URL = "https://zenodo.org/records/17631020/files/BirdNET+_V3.0-preview2_EUNA_1K_Labels.csv?download=1"
 
 
 def load_labels(labels_csv: str) -> List[str]:

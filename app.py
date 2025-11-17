@@ -24,7 +24,7 @@ from analyze import (
     SR,
 )
 
-st.set_page_config(page_title="BirdNET+ V3.0 Preview 1", layout="wide")
+st.set_page_config(page_title="BirdNET+ V3.0 Preview 2", layout="wide")
 
 # ---------------------------
 # Caching
