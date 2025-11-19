@@ -37,6 +37,21 @@ source .venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
+### Optionally, enable CUDA support
+This option requires you have an NVIDIA GPU with CUDA installed and visible to the environment, check for this by typing:
+```bash
+nvidia-smi
+```
+You should see a table showing information about your CUDA version and running processes:
+![alt text](image.png)
+
+If you do, then you can install a CUDA-enabled version of pyTorch:
+
+```bash
+pip install -U torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
+
+
 ## Usage
 
 Upon first run, the default model and labels will be automatically downloaded to the `models/` directory. You can download them manually from [Zenodo](https://zenodo.org/record/17571190).
@@ -62,6 +77,7 @@ python analyze.py /path/to/audio.wav
 - One row per (chunk, label) with confidence ≥ `--min-conf`
 - Multiple rows per chunk if multiple labels exceed threshold
 
+
 ## Examples
 ```bash
 # Minimal (uses defaults where available)
@@ -70,7 +86,7 @@ python analyze.py example/soundscape.wav
 # Specify model, chunk length, min confidence, and output CSV with embeddings
 python analyze.py example/soundscape.wav --chunk_length 2.0 --min-conf 0.2 --out-csv results.csv --export-embeddings
 
-# Specify model and run on GPU
+# Specify model and run on CUDA-enabled GPU
 python analyze.py example/soundscape.wav --model models/BirdNET+_V3.0-preview1_EUNA_1K_FP32.pt --device cuda
 ```
 
@@ -85,19 +101,6 @@ embeddings, predictions = model(input)
 For quick experimentation, we provide an interactive UI to upload audio, view a spectrogram, run the model, and visualize results.
 
 ![Streamlit app screenshot](img/streamlit-ui-screenshot.png)
-
-### Optionally, enable CUDA support
-This option requires you have an NVIDIA GPU with CUDA installed and visible to the environment, check for this by typing:
-```bash
-nvidia-smi
-```
-You should see a table showing information about your CUDA driver and running processes
-
-If you do, then install a cuda-enabled version of pyTorch
-
-```bash
-pip install -U torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-```
 
 
 ### Start the app
